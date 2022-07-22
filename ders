@@ -1,0 +1,16 @@
+
+girilecekNotSayisi = int(input("Kaç adet not gireceksiniz? "))
+gecilenDersSayisi = 0
+girilenNotlar = []
+for note in range(girilecekNotSayisi):
+    girilenNot = float(input(f"{note+1}. notu giriniz: "))
+    girilenNotlar.append(girilenNot) #listeye ekledim
+    if girilenNot >= 50:
+        gecilenDersSayisi += 1
+print(f"{girilecekNotSayisi} dersten {gecilenDersSayisi} dersi geçtiniz.")
+#print(f"Girdiğiniz notlar :  {girilenNotlar}")
+
+i = 0
+for girilenNot in girilenNotlar:
+     print(f"{i+1}. girdiğiniz not : {girilenNot} ")
+     i+=1
